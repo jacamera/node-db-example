@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>node-db-example</title>
+	</head>
+	<body>
+		<h1>node-db-example</h1>
+		<h2>Task Manager</h2>
+		<table>
+			<caption>Tasks</caption>
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Due Date</th>
+					<th>Category</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody id="task-rows"></tbody>
+			<!--This tbody contains a template element that we will clone when we add rows to the table-->
+			<tbody id="task-row-template-container" style="display: none;">
+				<tr>
+					<td class="id"></td>
+					<td class="name">
+						<span class="color-indicator" style="display: inline-block; width: 16px; height: 16px; vertical-align: middle;"></span>
+						<span class="text"></span>
+					</td>
+					<td class="description"></td>
+					<td class="due-date"></td>
+					<td class="category"></td>
+					<td>
+						<button class="delete-button">Delete</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<button id="add-task-button">Add Task</button>
+		<form id="new-task-form" style="display: none;">
+			<fieldset>
+				<legend>Add New Task</legend>
+				<label>Name</label><br />
+				<input type="text" name="name" /><br />
+				<label>Description</label><br />
+				<input type="text" name="description" /><br />
+				<label>Due Date</label><br />
+				<input type="date" name="due-date" /><br />
+				<label>Category</label><br />
+				<select name="category-id"></select><br />
+				<button id="clear-task-form-button">Cancel</button>
+				<button id="save-task-form-button">Submit</button>
+			</fieldset>
+		</form>
+		<script type="text/javascript" src="/main.js"></script>
+	</body>
+</html>
