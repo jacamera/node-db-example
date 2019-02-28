@@ -3,3 +3,4 @@ node_modules
 sqlite3
 sqlite3.exe
 server/database
+package-lock.json
