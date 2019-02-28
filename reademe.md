@@ -72,8 +72,8 @@ Open a terminal session and navigate to this project's directory before running 
     The `.read` command executes the SQL statements in the specified files.
 3. Insert a couple categories into the category table to get started:
 
-        INSERT INTO category (name, color) VALUES ('Budget', 1, 'red');
-        INSERT INTO category (name, color) VALUES ('Housework', 2, 'blue');
+        INSERT INTO category (name, color) VALUES ('Budget', 'red');
+        INSERT INTO category (name, color) VALUES ('Housework', 'blue');
 
     Individual SQL statements entered into the CLI must be terminated with a semicolon.
 4. Exit the CLI.
